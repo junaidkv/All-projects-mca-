@@ -1,0 +1,208 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="PublicMaster.master.cs" Inherits="PublicMaster" %>
+
+
+
+
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	<title>Medic Medical Category Bootstrap Responsive Web Template | Contact Us :: W3layouts</title>
+	<!-- Meta tag Keywords -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8" />
+	<meta name="keywords" content="Medic Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+	<script>
+	    addEventListener("load", function () {
+	        setTimeout(hideURLbar, 0);
+	    }, false);
+
+	    function hideURLbar() {
+	        window.scrollTo(0, 1);
+	    }
+	</script>
+	<!--// Meta tag Keywords -->
+
+	<!-- Custom-Files -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Bootstrap-Core-CSS -->
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+	<!-- Style-CSS -->
+	<link rel="stylesheet" href="css/fontawesome-all.css">
+	<!-- Font-Awesome-Icons-CSS -->
+	<!-- //Custom-Files -->
+
+	<!-- Web-Fonts -->
+	<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
+	    rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
+	    rel="stylesheet">
+	<!-- //Web-Fonts -->
+
+     <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+
+<body>
+	<!-- header -->
+	<header>
+		<!-- top-bar -->
+		<div class="top-bar py-3">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-7 top-social-agile">
+						<div class="row">
+							
+							<div class="col-6 header-top_w3layouts pl-3 text-lg-left text-center">
+								<p class="text-white">
+									<i class="fas fa-map-marker-alt mr-2"></i>Kochi,Ernakulam,Kerala</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-5 top-social-agile text-lg-right text-center">
+						<div class="row">
+							<div class="col-lg-7 col-6 top-w3layouts">
+								<p class="text-white">
+									<i class="far fa-envelope-open mr-2"></i>
+									<!-- <a href="mailto:info@example.com" class="text-white">info@example.com</a> -->
+								</p>
+							</div>
+							<div class="col-lg-5 col-6 header-w3layouts pl-4 text-lg-left">
+								<p class="text-white">
+									<i class="fas fa-phone mr-2"></i>+1 000263676</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	<div id="home">
+		
+		<div class="main-top py-1">
+			<nav class="navbar navbar-expand-lg navbar-light fixed-navi">
+				<div class="container">
+					
+					<h1>
+						<a class="navbar-brand font-weight-bold font-italic" href="index.html">
+							<span>M</span>edi<span>+</span> 
+							<i class="fas fa-syringe"></i>
+						</a>
+					</h1>
+					
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+					    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+						<ul class="navbar-nav ml-lg-auto">
+							<%--<li class="nav-item mt-lg-0 mt-3">
+                               
+								<a class="nav-link" href="public_home">HOME
+									<span class="sr-only">(current)</span>
+								</a>
+							</li>--%>
+							<li class="nav-item mx-lg-4 my-lg-0 my-3">
+								<a class="nav-link" href="public_login.aspx">Login</a>
+							</li>
+							<li class="nav-item mx-lg-4 my-lg-0 my-3">
+								<a class="nav-link" href="public_register.aspx">User Register</a>
+							</li>
+							<li class="nav-item mx-lg-4 my-lg-0 my-3">
+								<a class="nav-link" href="public_hospital.aspx">Hospital Register</a>
+							</li>
+
+
+							
+						</ul>
+						
+					</div>
+				</div>
+			</nav>
+		</div>
+		
+	</div>
+	
+	<div class="inner-banner-w3ls">
+		<div class="container">
+
+		</div>
+		
+	</div>
+	
+	<div class="breadcrumb-agile">
+		<div aria-label="breadcrumb">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item">
+					<a href="/"></a>
+				</li>
+				<li class="breadcrumb-item active" aria-current="page"></li>
+			</ol>
+		</div>
+	</div>
+	
+     <form id="form1" runat="server">
+    
+        <br />
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+            <p>
+                <br />
+            </p>
+        
+        </asp:ContentPlaceHolder>
+
+    </form>
+
+	
+	<script src="js/jquery-2.2.3.min.js"></script>
+	
+	<script src="js/responsiveslides.min.js"></script>
+	<script>
+	    $(function () {
+	        $("#slider4").responsiveSlides({
+	            auto: true,
+	            pager: true,
+	            nav: true,
+	            speed: 1000,
+	            namespace: "callbacks",
+	            before: function () {
+	                $('.events').append("<li>before event fired.</li>");
+	            },
+	            after: function () {
+	                $('.events').append("<li>after event fired.</li>");
+	            }
+	        });
+	    });
+	</script>
+	<!-- //banner slider -->
+
+	<!-- fixed navigation -->
+	<script src="js/fixed-nav.js"></script>
+	<!-- //fixed navigation -->
+
+	<!-- smooth scrolling -->
+	<script src="js/SmoothScroll.min.js"></script>
+	<!-- move-top -->
+	<script src="js/move-top.js"></script>
+	<!-- easing -->
+	<script src="js/easing.js"></script>
+	<!--  necessary snippets for few javascript files -->
+	<script src="js/medic.js"></script>
+
+	<script src="js/bootstrap.js"></script>
+	<!-- Necessary-JavaScript-File-For-Bootstrap -->
+
+	<!-- //Js files -->
+
+</body>
+
+</html>
+
+
+
+
+
+
