@@ -1,0 +1,105 @@
+<?php 
+include 'connection.php';
+if(isset($_POST['addcart']))
+{
+	return redirect('usermanagecart.php');
+	alert("ADDED");
+}
+
+
+
+
+ ?>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Buy product Fashion</title>
+</head>
+<body>
+<form method="post" enctype="multipart/form-data">
+	<table align="right">
+	<tr>
+	
+		<td colspan="2" align="right"> <input type="submit" name="login" value="SIGN UP"> </td> 
+	</tr>
+
+
+</table>
+
+
+<h1 align="center">VIEW PRODUCT DETAILS<hr size="10"></h1>
+
+
+
+
+
+	
+
+	
+	
+	
+	<!-- <th> Product Size </th>
+ -->
+	<table align="center" >
+
+
+	<?php $q="SELECT * FROM products INNER JOIN productimage USING (products_code) where products_code=".$_GET['pid'];
+	echo $q;
+	$result=select($q);
+	foreach($result as $row){
+	?>
+		<tr>
+			 <td colspan="2" align="center"><img src="<?php echo $row['productimage_path'];?>" width="100px" height="100px"></td> 
+			</tr>
+
+<?php
+}
+
+	$_GET['pid'];
+	$q="SELECT * FROM products where products_code=".$_GET['pid'];
+	echo $q;
+	$result=select($q);
+	foreach($result as $row)
+	{
+		?>
+			<tr>
+				<th> Product Name </th>
+				<td><?php echo $row['products_name'];?></td> 
+			</tr>
+		 	<tr>
+		 		<th> Product Price </th>
+		 		<td> <?php echo $row['products_price'];?></td> 
+		 	</tr>
+		 	<tr>
+		 		<th> Product Color </th>
+		 		<td> <?php echo $row ['products_color'];?> </td> 
+		 	</tr>
+		 	<tr>
+		 		<td><a href="usermanagecart.php ?pid=<?php echo $row['products_code'];?>">Add to Cart</a></td>
+		 	</tr>
+		 	
+				
+				  
+					
+					 	
+							
+	</tr>
+</table>
+<table>
+	<tr>
+		<td>
+			<br>
+			<br>
+			<br>
+		</td>
+	</tr>
+</table>
+	<?php
+     }
+
+	?>
+
+</form>
+</body>
+</html>

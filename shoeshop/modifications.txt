@@ -1,0 +1,22 @@
+Admin
+ 
+1UPDATE products,image,size.
+
+2VIEW USER ORDER and products of a particular user & confirm delivery approvel
+
+3.UPDATE STOCK details in database when user is purchased(show how much quantity left ).
+
+4VIEW Payments done by user.
+
+5VIEW sales REPORT(products sold).
+
+
+USER
+
+1MAKE payment, bill generation in pdf format.
+
+2On click BUY NOW FROM CART AND PAYMENT.
+
+3 Cart- quantity Update IN CART.
+
+PH NO: 9544365909.
